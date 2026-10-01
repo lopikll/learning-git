@@ -1,14 +1,8 @@
-def calculate_factorial(number):
-    # Initialize the factorial result to 1
-    factorial = 1
+import math
 
-    # Loop from 1 to number (inclusive) and multiply factorial by each number
-    for i in range(1, number + 1):
-        factorial *= i
+# Calculate the factorial of a number
+number = 5
+result = math.factorial(number)
 
-    return factorial
+print("The factorial of {number} is {result}")
 
-print(calculate_factorial(5))
-print(calculate_factorial(7))
-print(calculate_factorial(9))
-print(calculate_factorial(10))
